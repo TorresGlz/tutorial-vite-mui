@@ -1,23 +1,28 @@
-//import { Button } from "@mui/material";
-//import Button from "@mui/material/Button"; //Permite que los componentes cargen mas rapido si los importas de manera literal
-
-import { Button, Container, Typography } from "@mui/material";
-import AgricultureIcon from "@mui/icons-material/Agriculture";
-import AirIcon from '@mui/icons-material/Air';
+import { Button, Container, Grid, Typography } from "@mui/material";
 
 export default function App() {
   return (
     <Container>
-      <h1>App</h1>
-      <Typography variant="h3" color="primary">
-        H3 titulo
-      </Typography>
-      <Button variant="outlined" color="error" startIcon={<AgricultureIcon/>}>
-        Boton
-      </Button>
-      <Button variant="contained" color="success" endIcon={<AirIcon/>}>
-        Boton
-      </Button>
+      <Grid container spacing = {5}>
+        <Grid item xs={12} sm={6} md={4}>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, id?
+            Quia aliquam alias, eius accusantium delectus eveniet ab omnis hic?
+          </p>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, id?
+            Quia aliquam alias, eius accusantium delectus eveniet ab omnis hic?
+          </p>
+        </Grid>
+        <Grid item xs={12} sm={12} md={4}>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, id?
+            Quia aliquam alias, eius accusantium delectus eveniet ab omnis hic?
+          </p>
+        </Grid>
+      </Grid>
     </Container>
   );
 }
