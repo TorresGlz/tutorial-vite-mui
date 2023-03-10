@@ -8,18 +8,8 @@ export default function App() {
   return (
     <Container>
       <h1>App</h1>
-      <Box
-        sx={{
-          border: 3,
-          p: 5,
-          borderColor: "peru",
-          bgcolor: "#111",
-          color: "white",
-        }}
-        component = "span"
-      >
-        Pero que hermoso es MUI
-      </Box>
+      <Typography variant = "h3" color="primary">H3 titulo</Typography>
+      <Button variant ="contained">Boton</Button>
     </Container>
   );
 }
